@@ -1,0 +1,32 @@
+/* 文字颜色，包括按钮 */
+.xt-text-muted {
+  color: $xt-color-black-extra-light;
+}
+.xt-text-primary {
+  color: $xt-color-blue;
+}
+a.xt-text-primary:hover,
+a.xt-text-primary:focus {
+  color: $xt-color-blue-light;
+}
+.xt-text-success {
+  color: $xt-color-success;
+}
+a.xt-text-success:hover,
+a.xt-text-success:focus {
+  color: $xt-color-success-light;
+}
+.xt-text-warning {
+  color: $xt-color-warning;
+}
+a.xt-text-warning:hover,
+a.xt-text-warning:focus {
+  color: $xt-color-warning-light;
+}
+.xt-text-danger {
+  color: $xt-color-danger;
+}
+a.xt-text-danger:hover,
+a.xt-text-danger:focus {
+  color: $xt-color-danger-light;
+}

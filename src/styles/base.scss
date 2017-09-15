@@ -1,0 +1,252 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body,div,dl,dt,ul,li,h1,h2,h3,h4,h5,h6,input,form,p,textarea {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", "Helvetica","Arial","Microsoft Yahei","Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif!important;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+body {
+  font-size: 14px;
+  line-height: 1;
+  color: #434a54;
+  background-color: #f5f7fa;
+}
+i {
+  display: inline-block;
+  font-size: inherit;
+  line-height: inherit;
+}
+ol,ul,li {
+  list-style: none;
+  outline: none;
+}
+select:focus {
+  outline: none;
+}
+.clearfloat {
+  zoom: 1;
+}
+.clearfloat:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+
+body::-webkit-scrollbar-track,
+.xt-scroll::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+	background-color: #f5f7fa;
+}
+
+body::-webkit-scrollbar,
+.xt-scroll::-webkit-scrollbar
+{
+  height: 6px;
+	width: 6px;
+	background-color: #f5f7fa;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb,
+.xt-scroll::-webkit-scrollbar-thumb
+{
+  width: 6px;
+	border-radius: 10px;
+  background-color: #e6e9ed;
+}
+
+.xt-scroll-bg::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+	background-color: #f5f7fa;
+}
+
+.xt-scroll-bg::-webkit-scrollbar
+{
+  height: 16px;
+	width: 16px;
+	background-color: #f5f7fa;
+  border-radius: 10px;
+}
+
+.xt-scroll-bg::-webkit-scrollbar-thumb
+{
+  width: 16px;
+	border-radius: 10px;
+  background-color: #e6e9ed;
+}
+
+/* 文字对齐方式 */
+.xt-text-left {
+  text-align: left;
+}
+.xt-text-right {
+  text-align: right;
+}
+.xt-text-center {
+  text-align: center;
+}
+.xt-text-justify {
+  text-align: justify;
+}
+.xt-text-nowrap {
+  white-space: nowrap;
+}
+
+.xt-fr {
+  float: right;
+}
+.xt-fl {
+  float: left;
+}
+.xt-ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+a {
+  color: #434a54;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover,
+a:focus {
+  color: #656d78;
+}
+a:disabled {
+  color: #656d78;
+}
+img {
+  vertical-align: middle;
+  border: none;
+}
+
+
+/* 分割线 */
+hr,.xt-hr {
+  border: 0;
+  border-top: 1px solid #e6e9ed;
+  margin: 0;
+}
+.xt-hr-bold {
+  border: 0;
+  border-top: 4px solid #e6e9ed;
+  border-radius: 4px;
+}
+
+/* 阴影 */
+.xt-shadow-default {
+  box-shadow: 0 0 16px 0px rgba(0,0,0,0.1);
+}
+.xt-shadow-primary {
+  box-shadow: 0 0 4px 2px #3bafda;
+}
+.xt-shadow-warning {
+  box-shadow: 0 0 4px 2px #f6bb42;
+}
+.xt-shadow-danger {
+  box-shadow: 0 0 4px 2px #e9573f;
+}
+
+/* 文字大小、分类 */
+h1,h2,h3,h4,h5,h6,.xt-h1,.xt-h2,.xt-h3,.xt-h4,.xt-h5,.xt-h6 {
+  font-family: inherit;
+  font-weight: 200;
+  line-height: 1;
+  color: inherit;
+}
+h1,.xt-h1 { font-size: 24px; }
+h2,.xt-h2 { font-size: 18px; }
+h3,.xt-h3 { font-size: 16px; }
+h4,.xt-h4 { font-size: 14px; }
+h5,.xt-h5 { font-size: 12px; }
+
+.lead {}
+.small {}
+.mark {}
+.page-header {}
+
+
+// 字体图标
+.xt-icon-btn {
+  color: #aab2bd;
+}
+.xt-icon-btn:hover {
+  color: #656d78;
+}
+.xt-icon-lg {
+  font-size:30px;
+  vertical-align: middle;
+}
+.xt-icon-big {
+  font-size:24px;
+  vertical-align: middle;
+}
+.xt-icon-left {
+  padding-right: 6px;
+}
+
+.xt-badge {
+  display: inline-block;
+  min-width: 14px;
+  padding: 2px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  background: #777;
+  border-radius: 14px;
+  .iconfont {
+    font-size: 12px;
+    color: #fff;
+  }
+}
+
+a:disabled,
+button:disabled {
+  color: #fff;
+  background-color: #d2d2d2;
+  border: #d2d2d2;
+}
+input:disabled {
+  color: #bcbcbc;
+}
+
+input:disabled {
+  color: #bcbcbc;
+}
+code {
+  position: relative;
+  background: #f5f7fa;
+  border-radius: 4px;
+  padding: 12px;
+}
+.xt-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: calc(100vw - 100%); // 出现滚动条时，不闪动
+}
+.xt-container {
+  width: 1200px;
+  background-color: #fff;
+  border-radius: 4px;
+}
